@@ -1,0 +1,128 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+
+
+
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background: hsla(52, 100%, 73%, 1);
+
+background: linear-gradient(315deg, hsla(52, 100%, 73%, 1) 0%, hsla(305, 96%, 82%, 1) 100%);
+
+background: -moz-linear-gradient(315deg, hsla(52, 100%, 73%, 1) 0%, hsla(305, 96%, 82%, 1) 100%);
+
+background: -webkit-linear-gradient(315deg, hsla(52, 100%, 73%, 1) 0%, hsla(305, 96%, 82%, 1) 100%);
+
+filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#FFED75", endColorstr="#FDA4F6", GradientType=1 );
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    
+    
+}
+
+header {
+    background-color: #f07070;
+    color: #352b2b;
+    padding: 10px 40px;
+}
+
+
+
+.logo {
+    font-size: 1.5rem;
+
+}
+
+nav {
+    width: 100%; /* Make the navigation take full width */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f07070;
+    color: #352b2b;
+    padding: 10px 40px;
+}
+
+/* Your existing CSS styles */
+.menu-toggle {
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle img {
+    width: 30px;
+    height: auto;
+}
+
+.menu ul {
+    list-style: none;
+    display: flex; /* Make menu items display horizontally */
+}
+
+.menu ul li {
+    margin-left: 20px;
+}
+
+.menu ul li:first-child {
+
+    margin-left: 0;
+}
+.menu ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+
+
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Ensure content takes at least the height of the viewport */
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%; /* Adjust width as needed */
+}
+
+.text-section {
+    width: 45%; /* Adjust width as needed */
+    padding: 20px;
+}
+
+.image-section {
+    width: 50%; /* Adjust width to take half of the screen */
+    padding: 20px;
+    position: relative;
+}
+
+.image-section img {
+    width: 100%; /* Make the image cover the entire width of its container */
+    height: 100vh; /* Make the image cover the entire height of the viewport */
+    object-fit: cover; /* Ensure the image covers the entire container without distortion */
+}
+
+button {
+    display: block;
+    width: 150px;
+    padding: 13px 20px;
+    background-color: #f17c7c;
+    color: #f9f8f8;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
